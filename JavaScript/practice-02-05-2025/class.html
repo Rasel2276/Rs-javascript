@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   greet() {
+//     console.log(`Hello, I am ${this.name}`);
+//   }
+// }
+
+// class Teacher extends Person {
+//   constructor(name, subject) {
+//     super(name); // parent class constructor call
+//     this.subject = subject;
+//   }
+
+//   teach() {
+//     console.log(`${this.name} teaches ${this.subject}`);
+//   }
+// }
+
+// const teacher1 = new Teacher("Mr. Alam", "Math");
+// teacher1.greet();    // Output: Hello, I am Mr. Alam
+// teacher1.teach();    // Output: Mr. Alam teaches Math
+
+
+        // class person{
+        //     constructor (name){
+        //         this.name = name;
+        //     }
+        //     show(){
+        //         console.log(`Hello! I am ${this.name}`);
+        //     }
+        // }
+        // class teacher extends person{
+        //     constructor( name,subject){
+        //         super(name);
+        //         this.subject = subject;
+        //     }
+        //     child(){
+        //         console.log(`${this.name}  teaches ${this.subject}`);
+        //     }
+        // }
+
+        // const teacher_01 = new teacher("Rohim","Math");
+
+        // teacher_01.show();
+        // teacher_01.child();
+
+        // class teacher {
+        //     constructor (name){
+        //         this.name = name;
+        //     }
+        //     a(){
+        //         console.log(`Hello! I am ${this.name}`);
+        //     }
+        // }
+
+        //     class student extends teacher{
+        //         constructor (name,subject){
+        //             super(name);
+        //             this.subject = subject;
+        //         }
+        //        abc(){
+        //             console.log(` ${this.name}  teaches ${this.subject}`);
+        //         }
+        //     }
+
+        //     const rasel = new student ("Rasel Hossain","English");
+
+        //     rasel.a();
+        //     rasel.abc();
+
+        // class person {
+        //     constructor(name){
+        //         this.name = name;
+        //     }
+        //     ami(){
+        //         console.log(`Hello! I am ${this.name}`);
+        //     }
+        // }
+        // class person2 extends person{
+        //     constructor(name,subject){
+        //         super(name);
+        //         this.subject = subject;
+        //     }
+        //     tumi(){
+        //         console.log(`${this.name} teaches ${this.subject}`);
+        //     }
+        // }
+        // let rasel = new person2("Rasel","Math");
+
+        // rasel.ami();
+        // rasel.tumi();
+
+
+        class father {
+            constructor (name){
+                this.name = name;
+            }
+            show(){
+                console.log(`Hello! I am ${this.name}`);
+            }
+        }
+        class child extends father {
+            constructor(name,age){
+                super(name);
+                this.age = age;
+            }
+            print(){
+                console.log(`My name is ${this.name}  I am  ${this.age} years old`);
+            }
+        }
+
+        let person_1 = new child ("Rasel",20);
+
+        person_1.show();
+        person_1.print();
+    </script>
+</body>
+</html>

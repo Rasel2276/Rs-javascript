@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Input Form</title>
+</head>
+<body>
+  <h2>User Information Form</h2>
+  <form id="userForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("userForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Form default submit behavior off
+
+      // Input theke data neya
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      // Notun window open kora
+      const newWindow = window.open("", "_blank", "width=400,height=300");
+
+      // Notun window te content pathano
+      newWindow.document.write("<h2>User Input Received</h2>");
+      newWindow.document.write("<p><strong>Name:</strong> " + name + "</p>");
+      newWindow.document.write("<p><strong>Email:</strong> " + email + "</p>");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <form action="#" name="form">
+      <p>Name:</p>
+      <input type="text" placeholder="Enter your name" name="nam">
+      <p>ID:</p>
+      <input type="text" placeholder="Enter your ID No" name="id">
+      <p>Email:</p>
+      <input type="email" placeholder="Enter your email" name="Email">
+
+      <input type="button" value="Submit" onclick="Rafi()">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <script>
+    function Rafi() {
+      let name = document.form.nam.value;
+      let Id = document.form.id.value;
+      let email = document.form.Email.value;
+
+      let doc = window.open("", "", "width=300,height=300");
+      with(doc.document) {
+        open();
+        write("<p>Name: " + name + "</p>");
+        write("<p>ID: " + Id + "</p>");
+        write("<p>Email: " + email + "</p>");
+        close();
+      }
+    }
+  </script>
+</body>
+</html>
+
